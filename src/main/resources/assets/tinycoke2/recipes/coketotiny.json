@@ -1,0 +1,14 @@
+{
+  "group": "tiny_coke",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "fuelCoke"
+    }
+  ],
+  "result": {
+    "item": "tiny_coke:tinycoke",
+    "count": 16
+  }
+}
