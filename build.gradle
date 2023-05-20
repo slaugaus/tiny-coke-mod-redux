@@ -48,6 +48,10 @@ minecraft {
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             property 'forge.logging.console.level', 'debug'
 
+            // Make mixins work
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+           
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', 'examplemod'
 
@@ -66,6 +70,11 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             property 'forge.enabledGameTestNamespaces', 'examplemod'
+
+            // Make mixins work
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+
 
             mods {
                 examplemod {
@@ -120,9 +129,13 @@ repositories {
     // ForgeGradle automatically adds the Forge maven and Maven Central for you
 
     // If you have mod jar dependencies in ./libs, you can declare them as a repository like so:
-    // flatDir {
-    //     dir 'libs'
-    // }
+//     flatDir {
+//         dirs 'other-mods'
+//     }
+    
+    maven {
+        url "https://cursemaven.com"
+    }
 }
 
 dependencies {
@@ -138,7 +151,13 @@ dependencies {
 
     // Examples using mod jars from ./libs
     // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
-
+    
+    runtimeOnly fg.deobf("curse.maven:jei-238222:4536209")
+    runtimeOnly fg.deobf("curse.maven:immersive-engineering-231951:4535969")
+    
+//    implementation fg.deobf("blusunrize.immersiveengineering:ImmersiveEngineering-1.19.4-9.4.0-166")
+//    implementation fg.deobf("mezz.jei:jei-1.19.4-forge-13.1.0.11")
+    
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html

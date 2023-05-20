@@ -1,6 +1,4 @@
-{
-  "itemGroup.tinycoke2": "Tiny Coke Redux",
-  
-  "item.tinycoke2.tinycoke": "Tiny Coke",
-  "item.tinycoke2.halfcoke": "Half Coke"
+{  
+  "item.tinycoke2.tiny_coke": "Tiny Coke",
+  "item.tinycoke2.half_coke": "Half Coke"
 }
