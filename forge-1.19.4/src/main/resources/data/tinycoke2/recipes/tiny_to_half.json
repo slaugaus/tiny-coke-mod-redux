@@ -1,0 +1,39 @@
+{
+  "group": "tinycoke2",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "tinycoke2:tiny_coke"
+    },
+    "1": {
+      "item": "tinycoke2:tiny_coke"
+    },
+    "2": {
+      "item": "tinycoke2:tiny_coke"
+    },
+    "3": {
+      "item": "tinycoke2:tiny_coke"
+    },
+    "5": {
+      "item": "tinycoke2:tiny_coke"
+    },
+    "6": {
+      "item": "tinycoke2:tiny_coke"
+    },
+    "7": {
+      "item": "tinycoke2:tiny_coke"
+    },
+    "8": {
+      "item": "tinycoke2:tiny_coke"
+    }
+  },
+  "result": {
+    "item": "tinycoke2:half_coke",
+    "count": 1
+  }
+}

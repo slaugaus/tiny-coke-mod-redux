@@ -1,0 +1,15 @@
+{
+  "group": "tinycoke2",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tinycoke2:half_coke"
+    },
+    {
+      "item": "tinycoke2:half_coke"
+    }
+  ],
+  "result": {
+    "item": "immersiveengineering:coal_coke"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "group": "tinycoke2",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tinycoke2:half_coke"
+    }
+  ],
+  "result": {
+    "item": "tinycoke2:tiny_coke",
+    "count": 8
+  }
+}
